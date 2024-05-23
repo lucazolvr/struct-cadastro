@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct CadastroProduto {
+	int codigo; 
+	char nome[40];
+	int quantidade;
+	float valor;
+};
+
+int main(){
+	int i;
+    struct CadastroProduto produto [5];
+    for (i = 0; i < 5; i ++ ){
+        printf("Digite o codigo do produto %d:", i);
+        scanf("%d", &produto [i].codigo);
+
+            printf("Digite o nome do produto %d:", i);
+        scanf("%s", &produto [i].nome);
+
+                      printf("Digite a quantidade de produtos %d:", i);
+              scanf("%d", &produto [i].quantidade);
+
+                         printf("Digite o valor do Produto %d:", i);
+                 scanf("%f", &produto [i].valor);
+    }
+}
